@@ -1,0 +1,18 @@
+--- resources/linux/Atom.desktop.in	2014-07-16 00:45:08.477671586 +1000
+***************
+*** 1,7 ****
+  [Desktop Entry]
+  Name=Atom
+  Comment=<%= description %>
+! Exec=<%= installDir %>/share/atom/atom %U
+  Icon=<%= iconName %>
+  Type=Application
+  StartupNotify=true
+--- 1,7 ----
+  [Desktop Entry]
+  Name=Atom
+  Comment=<%= description %>
+! Exec=/usr/share/atom/atom %U
+  Icon=/usr/share/atom/resources/app/resources/atom.png
+  Type=Application
+  StartupNotify=true
