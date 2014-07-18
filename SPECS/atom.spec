@@ -50,7 +50,7 @@ script/build
 # atom install stage
 # remove previous build (if exists) and "install" atom to the buildroot prefix
 # include relevent libraries, binaries and doc/license files
-script/grunt install --install-dir %{_buildrootdir}/usr
+script/grunt install --install-dir %{buildroot}/usr
 %files
 %doc README.md LICENSE.md CONTRIBUTING.md
 %{_bindir}/*
