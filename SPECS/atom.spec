@@ -55,8 +55,3 @@ script/grunt install --install-dir %{buildroot}/usr
 %doc README.md LICENSE.md CONTRIBUTING.md
 %{_bindir}/*
 %{_datadir}/*
-
-
-#%changelog
-#* Tue Jul 15 2014 
-#- 
