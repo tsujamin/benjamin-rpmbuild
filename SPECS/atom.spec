@@ -20,7 +20,7 @@ Patch0:         atom.check-buildroot.patch
 # Automatic requirement generation fails as spidermonkey and ruby are detected when 
 # not required.
 BuildConflicts: gyp 
-BuildRequires:  make, gcc, gcc-c++, glibc-devel, nodejs, curl, libgnome-keyring-devel
+BuildRequires:  make, gcc, gcc-c++, glibc-devel, nodejs, curl, git-core, libgnome-keyring-devel
 Requires:       libgnome-keyring
 AutoReqProv:    no
 
