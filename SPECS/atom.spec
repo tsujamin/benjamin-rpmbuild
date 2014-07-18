@@ -8,8 +8,9 @@ URL:            https://atom.io/
 Source0:        https://github.com/atom/atom/archive/v%{version}.tar.gz
 Patch0:         atom.check-buildroot.patch
 
-BuildRequires:  make, gcc, gcc-c++, glibc-devel, nodejs, npm, libgnome-keyring-devel, git-core
-#Requires:       
+BuildRequires:  make, gcc, gcc-c++, glibc-devel, nodejs, npm, libgnome-keyring-devel
+Requires:       libgnome-keyring
+AutoReqProv:    no
 
 %description
 Atom is a hackable text editor for the 21st century, built on atom-shell, and based on 
@@ -31,12 +32,12 @@ script/build
 sudo yum -y install npm
 
 %install
+rm -rf $RPM_BUILD_ROOT
 script/grunt install --install-dir %{buildroot}/usr
-
-#%files
-#%doc
-
-
+%files
+%doc README.md LICENSE.md CONTRIBUTING.md
+%{_bindir}/*
+%{_datadir}/*
 
 #%changelog
 #* Tue Jul 15 2014 

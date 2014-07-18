@@ -1,18 +1,22 @@
---- resources/linux/Atom.desktop.in	2014-07-16 00:45:08.477671586 +1000
+*** resources/linux/Atom.desktop.in.orig	2014-07-16 01:09:40.166466468 +1000
+--- resources/linux/Atom.desktop.in	2014-07-16 01:09:46.096304282 +1000
 ***************
-*** 1,7 ****
+*** 1,8 ****
   [Desktop Entry]
   Name=Atom
   Comment=<%= description %>
 ! Exec=<%= installDir %>/share/atom/atom %U
-  Icon=<%= iconName %>
+! Icon=<%= iconName %>
   Type=Application
   StartupNotify=true
---- 1,7 ----
+  Categories=GNOME;GTK;Utility;TextEditor;
+--- 1,9 ----
   [Desktop Entry]
   Name=Atom
   Comment=<%= description %>
 ! Exec=/usr/share/atom/atom %U
-  Icon=/usr/share/atom/resources/app/resources/atom.png
+! Icon=/usr/share/atom/resources/app/resources/atom.png
   Type=Application
   StartupNotify=true
+  Categories=GNOME;GTK;Utility;TextEditor;
++ 
