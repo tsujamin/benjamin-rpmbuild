@@ -3,7 +3,7 @@ Version:        0.6.1
 Release:        1%{?dist}
 Summary:        Delivers high quality rips from audio Cd's using cdparanoia
 
-License:        GPLv3
+License:        GPLv3+
 URL:            https://github.com/tsujamin/rubyripper
 Source0:        https://github.com/tsujamin/rubyripper/archive/%{version}.tar.gz
 
@@ -43,8 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Apr  8 2015 Benjamin Roberts <Benjamin@BGRoberts.id.au>
-0.6.1:
-added freedb support for ruby-2.X
-fixed error when prime character present in song title
-corrected rubydir prefix handling in configure script
-- 
+- 0.6.1-1
+- added freedb support for ruby-2.X
+- fixed error when prime character present in song title
+- corrected rubydir prefix handling in configure script
